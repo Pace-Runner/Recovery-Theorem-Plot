@@ -4,6 +4,10 @@ In 2015, Stephen Ross published a theorey: he showed that under certain conditio
 
 This project implements that theorem and visualizes it in 3D.
 
+<img width="1486" height="634" alt="image" src="https://github.com/user-attachments/assets/4797a268-0d23-4aa3-bfcf-0439866ae166" />    
+<img width="1431" height="622" alt="image" src="https://github.com/user-attachments/assets/de4ffd4e-a606-4402-8614-7a84c3965377" />  
+
+
 ## What This App Does
 
 This is a Streamlit app that:
@@ -12,6 +16,8 @@ This is a Streamlit app that:
 2. Builds an implied volatility surface from that data
 3. Computes the risk-neutral probability distribution using Breeden-Litzenberger (the classic method from 1978)
 4. Applies the Recovery Theorem to convert those risk-neutral probabilities into *physical* probabilities
+
+Here is a video of me going through the program and explaining with very simply example of how one might inteperate the plots: https://youtu.be/DxrStSYuIiY
 
 ## Installation
 
@@ -31,7 +37,7 @@ This is the starting point. It shows implied volatility across:
 
 What you're seeing is the famous "volatility smile". Out-of-the-money options have higher implied vol because of tail risk and skewness. The surface should be relatively smooth - if it's jagged, there's not enough liquidity in those contracts.
 If you would like a futher explination I would suggest watching this video:
-https://www.youtube.com/watch?v=G7gf-oXptxE
+https://www.youtube.com/watch?v=G7gf-oXptxE  
 https://www.youtube.com/watch?v=YH0tWpBaKGs
 
 **What to look for:**
@@ -137,3 +143,4 @@ Lots of people think it's overly theoretical and the assumptions don't hold in r
 **Critiques:**
 - Borovička, J., Hansen, L. P., & Scheinkman, J. A. (2016). "Misspecified Recovery." *Journal of Finance*, 71(6), 2493-2544.
   - (They argue the assumptions are too strong and misspecification leads to garbage results)
+
